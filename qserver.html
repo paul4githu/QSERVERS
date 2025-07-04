@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QServers - Website Security</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="social-icons">
+            <a href="#"><img src="qserver 2 (1).jpg" alt="Facebook"></a>
+            <a href="#"><img src="qserver 1.jpg" alt="Twitter"></a>
+            <a href="#"><img src="quiver 3.jpg" alt="Instagram"></a>
+            <a href="#"><img src="quiver 4.jpg" alt="LinkedIn"></a>
+        </div>
+        <div class="top-links">
+            <a href="#"><img src="quiver 24.jpg">View Cart (0)</a>
+            <a href="#">Submit Support Ticket</a>
+            <a href="#" class="btn-manage">Manage Account</a>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="quiver 1.png" alt="QServers Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Hosting</a></li>
+            <li><a href="#">Domain Names</a></li>
+            <li><a href="#">SSL</a></li>
+            <li><a href="#">Affiliates</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Website Security</h1>
+            <h2>FREE SSL Certificates On All Accounts</h2>
+            <p>By Let's Encrypt. You can install Let's Encrypt certificates for free through the cPanel of your hosting account under the security tab.</p>
+            <a href="#" class="btn-know-more">KNOW MORE</a>
+        </div>
+        <div class="carousel-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+
+
+    <style>
+        /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Top Bar */
+.top-bar {
+    background: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 50px;
+}
+
+.social-icons a img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.top-links a img {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+    width: 25px;
+    height: 25px;
+}
+
+.btn-manage {
+    background-color: #a90033;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #444;
+    font-size: 16px;
+    position: relative;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #c3003a;
+    color: white;
+    padding: 100px 50px;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.5;
+}
+
+.btn-know-more {
+    display: inline-block;
+    padding: 12px 30px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-know-more:hover {
+    background: white;
+    color: #c3003a;
+}
+
+/* Carousel Dots */
+.carousel-dots {
+    margin-top: 40px;
+}
+
+.carousel-dots span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.carousel-dots span:hover {
+    opacity: 1;
+}
+
+    </style>
+
+
+<!-- Domain Search Section -->
+<section class="domain-search">
+    <h2>Domain Search</h2>
+    <div class="search-box">
+        <input type="text" placeholder="www.mydomain.com">
+        <select>
+            <option>.com</option>
+            <option>.ng</option>
+            <option>.org</option>
+            <option>.net</option>
+        </select>
+        <button>🔍 Search</button>
+    </div>
+</section>
+
+
+<!-- Our Services Section -->
+<section class="services">
+    <h2>Our Services</h2>
+    <p class="subtitle">Domain Name Registration, Web Hosting, SSL Certificates & Website Development</p>
+    <div class="service-cards">
+        <div class="service-card">
+            <img src="quiver 5.jpg" alt="Domain">
+            <h3>DOMAIN NAMES</h3>
+            <p class="price">₦6,500 <span>per year</span></p>
+            <p class="desc">Secure your online identity today. Even if you're not ready to build a website, you can reserve your name so it's ready when you need it.</p>
+            <a href="#" class="btn-service">Find out More</a>
+        </div>
+        <div class="service-card">
+            <img src="quiver 6.jpg" alt="Hosting">
+            <h3>WEB HOSTING</h3>
+            <p class="price">₦1,800 <span>per month</span></p>
+            <p class="desc">Our web hosting is great for static websites, database-driven content management systems, and custom applications.</p>
+            <a href="#" class="btn-service">Find out More</a>
+        </div>
+        <div class="service-card">
+            <img src="quiver 7.jpg" alt="SSL">
+            <h3>SSL CERTIFICATES</h3>
+            <p class="price">₦14,500 <span>per year</span></p>
+            <p class="desc">Our SSL certificates ensure your website is encrypted & safe from any would-be cyberbullies. Affordable, secure & easy to install.</p>
+            <a href="#" class="btn-service">Find out More</a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Why Choose Us Section -->
+<section class="why-choose">
+    <h2>Why choose us?</h2>
+    <p class="subtitle">The top reasons to choose us for your hosting needs</p>
+    <div class="choose-cards">
+        <div class="card">
+            <img src="quiver 8.jpg" alt="Support">
+            <h3>SUPPORT</h3>
+            <p>We’ve got an awesome, responsive team that’s here 24/7 to give you helpful website advice. And, you can contact them any way you’d like: phone, chat, or ticket! Whether you’ve got an issue with your site, or just a simple question, we’re here to help!</p>
+        </div>
+        <div class="card">
+            <img src="quiver 9.jpg" alt="Uptime">
+            <h3>UPTIME</h3>
+            <p>Your website and applications are essential when it comes to the success of your business. We provide 99.9% server uptime for your site.</p>
+        </div>
+        <div class="card">
+            <img src="quiver 10.jpg" alt="Scalable">
+            <h3>SCALABLE</h3>
+            <p>As your organization grows, technology should grow together to suit your needs. Choose the right plan to suit you today and tomorrow.</p>
+        </div>
+        <div class="card">
+            <img src="quiver 11.jpg" alt="Data Backup">
+            <h3>DATA BACKUP</h3>
+            <p>We provide daily/weekly remote backups of your data for continuous protection. Our RAID level 1 storage ensures that your data is protected against hardware failure.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<style>
+    /* Why Choose Us Section */
+.why-choose {
+    padding: 80px 50px;
+    text-align: center;
+    background-color: white;
+}
+
+.why-choose h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.why-choose .subtitle {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.choose-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.choose-cards .card {
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 30px 20px;
+    width: 220px;
+    border-radius: 5px;
+}
+
+.choose-cards .card img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.choose-cards .card h3 {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.choose-cards .card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Services Section */
+.services {
+    background-color: #f1f1f1;
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.services .subtitle {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background: white;
+    padding: 30px 20px;
+    width: 280px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-card img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.price {
+    font-size: 24px;
+    color: #0077a6;
+    margin-bottom: 5px;
+}
+
+.price span {
+    font-size: 14px;
+    color: #666;
+}
+
+.desc {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.btn-service {
+    background: #a90033;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Domain Search Section */
+.domain-search {
+    background-color: #f1f1f1;
+    padding: 50px;
+    text-align: center;
+}
+
+.domain-search h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    background: white;
+    display: inline-flex;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.search-box input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 1000px;
+}
+
+.search-box select {
+    border: none;
+    padding: 10px;
+    outline: none;
+    background: white;
+    color: #555;
+}
+
+.search-box button {
+    background-color: #0077a6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.search-box button:hover {
+    background-color: #005f82;
+}
+
+</style>
+
+
+<!-- Customer Feedback & Award Section -->
+<section class="customer-feedback-section">
+  <div class="feedback-heading">
+    <h2>What do our customers think?</h2>
+    <p>Don’t just take our word for it. Find out what real customers are saying.</p>
+  </div>
+
+  <div class="feedback-wrapper">
+    <!-- Testimonial -->
+    <div class="testimonial-box">
+      <div class="testimonial-content">
+        <img src="quiver 23.jpg" alt="Store Icon" class="testimonial-icon">
+        <p>“Absolutely amazing and seamless service. The customer service were helpful when i had an issue”</p>
+        <div class="testimonial-author">
+         <p class align = right><strong>Emmanuel</strong><br>
+          <small>15th August, 2023</small></p>
+        </div>
+        <a href="#" class="testimonial-link">Read more testimonials</a>
+      </div>
+    </div>
+
+    <!-- Award Carousel -->
+    <div class="award-box">
+      <h3>Awards</h3>
+      <div class="award-content">
+        <img src="quiver 12.jpg" alt="Award Icon" class="award-icon">
+        <p>Cloud Web Hosting Company of the Year - 2022</p>
+      </div>
+      <div class="pagination-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<style>
+.customer-feedback-section {
+  background: #f4f4f4;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.feedback-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feedback-heading h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+.feedback-heading p {
+  color: #666;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.feedback-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.testimonial-box,
+.award-box {
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 25px;
+  width: 450px;
+  max-width: 90%;
+}
+
+.testimonial-icon {
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.testimonial-content p {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.testimonial-author {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+  justify-content: right;
+}
+
+.testimonial-link {
+  font-size: 14px;
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.testimonial-link:hover {
+  text-decoration: underline;
+}
+
+.award-box h3 {
+  text-align: center;
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.award-content {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.award-icon {
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.award-content p {
+  font-size: 14px;
+  color: #222;
+}
+
+.pagination-dots {
+  text-align: center;
+}
+
+.pagination-dots .dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.pagination-dots .dot.active {
+  background: #333;
+}
+
+</style>
+
+
+<!-- Brand Logo Carousel Section -->
+<section class="brand-carousel">
+  <button class="scroll-btn left" onclick="scrollCarousel(-1)">&#8249;</button>
+
+  <div class="logo-container" id="logoCarousel">
+    <img src="quiver 13.jpg" alt="Bet9ja">
+    <img src="quiver 14.jpg" alt="UBA">
+    <img src="quiver 15.jpg" alt="EbonyLife TV">
+    <img src="quiver 16.jpg" alt="Christ Embassy">
+    <img src="quiver 17.jpg" alt="Lagos State">
+    <img src="quiver 18.jpg" alt="Lonadek">
+  </div>
+
+  <button class="scroll-btn right" onclick="scrollCarousel(1)">&#8250;</button>
+</section>
+
+
+<style>
+    .brand-carousel {
+  background-color: #f2f2f2;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 40px;
+  padding: 10px 40px;
+  scroll-snap-type: x mandatory;
+  max-width: 90%;
+}
+
+.logo-container img {
+  height: 50px;
+  scroll-snap-align: center;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.logo-container img:hover {
+  transform: scale(1.05);
+}
+
+.scroll-btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #999;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  padding: 10px;
+}
+
+.scroll-btn.left {
+  left: 0;
+}
+
+.scroll-btn.right {
+  right: 0;
+}
+
+@media (max-width: 600px) {
+  .scroll-btn {
+    font-size: 24px;
+  }
+
+  .logo-container {
+    gap: 20px;
+    padding: 10px 20px;
+  }
+}
+
+</style>
+
+
+<!-- Top Navigation Bar -->
+<nav class="top-nav">
+  <div class="nav-left">
+    <a href="#" class="nav-home">🏠 Home</a>
+  </div>
+  <div class="nav-right">
+    <img src="quiver 19.jpg" alt="MasterCard">
+    <img src="quiver 20.jpg" alt="Visa">
+    <img src="q" alt="Interswitch">
+  </div>
+</nav>
+
+
+<style>
+    .top-nav {
+  background-color: #3a3a3a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.nav-left .nav-home {
+  color: #fffacd;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nav-left .nav-home:hover {
+  text-decoration: underline;
+}
+
+.nav-right img {
+  height: 24px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+</style>
+
+
+<!-- Footer Section -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-column">
+      <h4>Hosting</h4>
+      <ul>
+        <li><a href="#">Website Hosting</a></li>
+        <li><a href="#">Cloud VPS Hosting</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#">Domain Names</a></li>
+        <li><a href="#">SSL Certificates</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">FAQ's</a></li>
+        <li><a href="#">Our Partners</a></li>
+        <li><a href="#">Payment Options</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Clients</h4>
+      <ul>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Affiliates</a></li>
+        <li><a href="#">Announcements</a></li>
+        <li><a href="#">Knowledgebase</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Manage</h4>
+      <ul>
+        <li><a href="#">View Emails</a></li>
+        <li><a href="#">View Tickets</a></li>
+        <li><a href="#">View Invoices</a></li>
+        <li><a href="#">Products & Services</a></li>
+        <li><a href="#">Domain Management</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-logo">QServers Web Hosting</div>
+    <div class="contact-info">
+      <p>QServers Network Limited - © 2022 All Rights Reserved.</p>
+      <p>11 Adeleke Str, Off Allen Avenue, Ikeja.</p>
+      <p>Sales: 08120800799 | Tech: 08187818181, 09094786149</p>
+      <p>Email: <a href="mailto:support@qservers.net">support@qservers.net</a></p>
+    </div>
+    <div class="payment-methods">
+      <img src="quiver 19.jpg" alt="MasterCard">
+      <img src="quiver 20.jpg" alt="Visa">
+      <img src="quiver 21.jpg" alt="Interswitch">
+    </div>
+    <div class="back-to-top">
+      <a href="#top">⬆</a>
+    </div>
+  </div>
+</footer>
+
+
+<style>
+    .site-footer {
+  background-color: #3a3a3a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 40px 20px 0;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+  background: #900028;
+  padding: 40px 0;
+}
+
+.footer-column h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  padding: 20px;
+  background: #333;
+  text-align: center;
+  font-size: 13px;
+}
+
+.footer-logo {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin: 4px 0;
+  color: #ccc;
+}
+
+.payment-methods img {
+  height: 25px;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+
+.back-to-top {
+  margin-top: 15px;
+}
+
+.back-to-top a {
+  display: inline-block;
+  background: #c10030;
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+</style>
+
+
+
+
+
+</body>
+</html>
